@@ -261,7 +261,6 @@ nav {
 /* ----------------------------------------- */
 .serpientes {
   width: 90%;
-  height: 580px;
   background-color: #000013ce;
   margin: 1rem auto;
   border-radius: 10px;
@@ -269,7 +268,7 @@ nav {
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "T g" "t g" "p g" "pa g" "c g" "ha g" "al g" "V g"; }
+  grid-template-areas: "T T" "t g" "p g" "pa g" "c g" "ha g" "al g" "V g"; }
 
 .T {
   grid-area: T; }
@@ -298,13 +297,15 @@ nav {
 .g {
   grid-area: g; }
 
-.ga {
-  grid-area: ga; }
-
 .nomS {
   padding: 0.5rem;
   color: #ffff00;
-  /* width: 50%; */ }
+  display: flex;
+  align-items: baseline; }
+
+p {
+  color: white;
+  text-align: justify; }
 
 .galeria {
   float: right;
