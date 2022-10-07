@@ -5,7 +5,7 @@
 
 /* ----------------------------------------- */
 body {
-  background-image: url(./imagen/mamba-negra.jpeg);
+  background-image: url(./imagen/crucera-fondo.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,9 +44,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 0 20px;
-  /* width: 400px;
-    background-color: #ffffff; */ }
+  margin: 0 20px; }
 
 .menu li {
   list-style: none;
@@ -62,7 +60,6 @@ nav {
 
 .menu li:hover .desplegable {
   display: block;
-  /* margin-right: 1rem; */
   right: 0px; }
 
 /* ------------------------------- */
@@ -70,7 +67,10 @@ nav {
   position: absolute;
   background-color: #000013;
   display: none;
-  width: 250px; }
+  width: 35rem;
+  height: 4rem;
+  border: groove;
+  border-color: #ffff00; }
 
 .desplegable li a {
   display: block;
@@ -96,20 +96,20 @@ nav {
 
 .menu2 li a {
   display: block;
-  /* padding: 15px 20px; */
   color: white;
   text-decoration: none; }
 
 .desplegable .menu2:hover .desplegable2 {
   display: block;
-  /* margin-right: 1rem; */
   right: 0px; }
 
 .desplegable2 {
   position: absolute;
   background-color: #000013;
   display: none;
-  width: 250px; }
+  width: 22rem;
+  border: groove;
+  border-color: #ffff00; }
 
 .desplegable2 li a {
   display: block;
@@ -125,7 +125,6 @@ nav {
 
 /* ----------------------------------------- */
 .defin {
-  /* height: 210px; */
   width: 500px;
   margin: 0 auto;
   margin-top: 4rem;
@@ -218,8 +217,7 @@ nav {
   grid-area: aclaracion;
   margin: 10px;
   margin-top: 3.5rem;
-  text-align: center;
-  /* padding: 0.5rem; */ }
+  text-align: center; }
 
 .texto-aclaracion {
   width: 80%;
@@ -268,7 +266,7 @@ nav {
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "T T" "t g" "p g" "pa g" "c g" "ha g" "al g" "V g"; }
+  grid-template-areas: "T T" "t g" "p g" "pa g" "c g" "ha g" "al g" "V V"; }
 
 .T {
   grid-area: T; }
@@ -301,7 +299,8 @@ nav {
   padding: 0.5rem;
   color: #ffff00;
   display: flex;
-  align-items: baseline; }
+  align-items: baseline;
+  height: 12.5%; }
 
 p {
   color: white;
@@ -313,6 +312,11 @@ p {
   height: 230px;
   margin: auto;
   border-radius: 10px; }
+
+.leermas-cuadro {
+  background-color: #000013;
+  border: groove;
+  border-color: #ffff00; }
 
 /*-------------------------------------------*/
 #pie {
@@ -332,7 +336,13 @@ p {
     margin-right: 1rem;
     padding: 0px; }
   .ven {
-    margin: 8px; } }
+    margin: 8px; }
+  .serpientes {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10fr;
+    gap: 0px 0px;
+    grid-template-areas: "T" "t" "p" "pa" "c" "ha" "al" "V" "g"; } }
 
 @media screen and (max-width: 768px) {
   #cabeza {
@@ -353,7 +363,9 @@ p {
     margin: 0 auto; }
   .noveneno {
     grid-area: noveneno;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .galeria {
+    height: 230px; } }
 
 @media screen and (max-width: 576px) {
   #cabeza {

@@ -5,7 +5,7 @@
 }
 /* ----------------------------------------- */
 body{
-    background-image: url(./imagen/mamba-negra.jpeg);
+    background-image: url(./imagen/crucera-fondo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,9 +17,7 @@ body{
 }
 /* ----------------------------------------- */
 h1{
-    // width: 480px;
     padding: 5px;
-    // float: left;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -28,7 +26,6 @@ h1{
 /* ----------------------------------------- */
 #cabeza {
     background-color: #000013;
-    // height: 65px;
     position: sticky;
     top: 0px;
     border-style: groove;
@@ -42,9 +39,7 @@ h1{
     "titulo menu-navegable";
 }
 .titulo{
-    // padding: 1rem;
     color: #ffff00;
-    // height: 65px;
     width: 100%;
 }
 /* ----------------------------------------- */
@@ -53,8 +48,6 @@ nav{
     align-items: center;
     justify-content: flex-end;
     margin: 0 20px;
-    /* width: 400px;
-    background-color: #ffffff; */
 }
 .menu  li{
     list-style: none;
@@ -70,7 +63,6 @@ nav{
 }
 .menu li:hover .desplegable{
     display: block;
-    /* margin-right: 1rem; */
     right: 0px;
 }
 /* ------------------------------- */
@@ -78,7 +70,10 @@ nav{
     position: absolute;
     background-color: #000013;
     display: none;
-    width: 250px;
+    width: 35rem;
+    height: 4rem;
+    border: groove;
+    border-color: #ffff00;
 }
 .desplegable li a{
     display: block;
@@ -105,20 +100,20 @@ nav{
 }
 .menu2 li a{
     display: block;
-    /* padding: 15px 20px; */
     color: white;
     text-decoration: none;
 }
 .desplegable .menu2:hover .desplegable2 {
     display: block;
-    /* margin-right: 1rem; */
     right: 0px;
 }
 .desplegable2{
     position: absolute;
     background-color: #000013;
     display: none;
-    width: 250px;
+    width: 22rem;
+    border: groove;
+    border-color: #ffff00;
 }
 .desplegable2 li a{
     display: block;
@@ -135,7 +130,6 @@ nav{
 
 /* ----------------------------------------- */
 .defin{
-    /* height: 210px; */
     width: 500px;
     margin: 0 auto;
     margin-top: 4rem;
@@ -147,16 +141,6 @@ nav{
     border-style: groove;
     border-color: #ffff00;
     transition: all 2s;
-
-//   padding: 5px;
-//   margin-left: 4rem;
-//   background-color: #000013;
-//   display: flex;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   float: left;
-//   border-style: groove;
-//   border-color: #ffff00;
 }
 .defin:hover{
     background-color: #00324e;
@@ -171,7 +155,6 @@ nav{
     border-color: #ffff00;
     background-color: #000013;
     text-align: center;
-    
 }
 .definiciones{
    float: left;
@@ -201,7 +184,6 @@ nav{
     margin: 10px;
 }
 .veneno{
-    // width: 400px;
     padding: 5px;
     margin-left: 4rem;
     background-color: #000013;
@@ -213,7 +195,6 @@ nav{
     border-color: #ffff00;
 }
 .noveneno{
-    // width: 400px;
     padding: 5px;
     margin-right: 4rem;
     background-color: #000013;
@@ -225,32 +206,7 @@ nav{
     border-color: #ffff00;
 }
 /* ----------------------------------------- */
-// .definicion{
-//     margin: 4rem;
-//     border-style: groove;
-//     border-color: #ffff00;
-//     text-align: justify;
-// }
-// .aclaracion{
-//     height: 122px;
-//     width: 148px;
-//     border-right: groove;
-//     border-color: #ffff00;
-//     float: left;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     color: #ffff00;
-//     background-color: #000013;
-// }
-// .texto-aclaracion{
-//     padding: 10px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     line-height: 1.6;
-//     background-color: #000013;
-// }
+
 .definicion{
     border-style: none;
 
@@ -272,14 +228,6 @@ nav{
     margin: 10px;
     margin-top: 3.5rem;
     text-align: center;
-    // margin: auto;
-    // height: 40px;
-    // width: 125px;
-    /* padding: 0.5rem; */
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-wrap: wrap;
 }
 .texto-aclaracion{
     width: 80%;
@@ -321,7 +269,6 @@ nav{
 /* ----------------------------------------- */
 .serpientes{
     width: 90%;
-    // height: 580px;
     background-color: #000013ce;
     margin: 1rem auto;
     border-radius: 10px;
@@ -338,7 +285,7 @@ nav{
     "c g"
     "ha g"
     "al g"
-    "V g"; 
+    "V V"; 
 }
 .T{
     grid-area: T;
@@ -373,6 +320,7 @@ nav{
     color: #ffff00;
     display: flex;
     align-items: baseline;
+    height: 12.5%;
 }
 p{
     color: white;
@@ -385,6 +333,11 @@ p{
     margin: auto;
     border-radius: 10px;
 }
+.leermas-cuadro{
+    background-color: #000013;
+    border: groove;
+    border-color: #ffff00;
+  }
 /*-------------------------------------------*/
 #pie{
     background-color:#000013;
@@ -408,6 +361,22 @@ p{
     }
     .ven{
         margin: 8px;
+    }
+    .serpientes{
+        display: grid; 
+        grid-template-columns: 2fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "T"
+        "t"
+        "p"
+        "pa"
+        "c"
+        "ha"
+        "al"
+        "V"
+        "g"; 
     }
 }
 
@@ -439,9 +408,6 @@ p{
         grid-area: noveneno;
         margin: 0 auto;
     }
-    // .subtitulos{
-    //     width: 100vw;
-    // }
     // .serpientes{
     // width: 90%;
     // height: 580px;
@@ -459,11 +425,11 @@ p{
     // "pa c"
     // "ha al"
     // "V V"
-    // "g ga"; 
+    // "g g"; 
     // }
-    // .galeria{
-    //     height: 230px;
-    // }
+    .galeria{
+        height: 230px;
+    }
 }
 
 @media screen and (max-width: 576px) {
