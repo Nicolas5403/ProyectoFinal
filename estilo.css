@@ -89,41 +89,6 @@ nav {
   width: 130%; }
 
 /* ----------------------------------------- */
-.menu2 li {
-  list-style: none;
-  position: relative;
-  display: inline-block; }
-
-.menu2 li a {
-  display: block;
-  color: white;
-  text-decoration: none; }
-
-.desplegable .menu2:hover .desplegable2 {
-  display: block;
-  right: 0px; }
-
-.desplegable2 {
-  position: absolute;
-  background-color: #000013;
-  display: none;
-  width: 22rem;
-  border: groove;
-  border-color: #ffff00; }
-
-.desplegable2 li a {
-  display: block;
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none; }
-
-/* ------------------------------- */
-.menu-navegable2 {
-  width: 50px;
-  height: 50px;
-  transition: all 1s; }
-
-/* ----------------------------------------- */
 .defin {
   width: 500px;
   margin: 0 auto;
@@ -334,8 +299,6 @@ p {
   justify-content: space-around; }
 
 @media screen and (max-width: 992px) {
-  #cabeza {
-    background-color: #7676ff; }
   .veneno {
     margin-left: 1rem;
     padding: 0px; }
@@ -352,8 +315,6 @@ p {
     grid-template-areas: "T" "t" "p" "pa" "c" "ha" "al" "V" "g"; } }
 
 @media screen and (max-width: 768px) {
-  #cabeza {
-    background-color: #0000ff; }
   .defin:hover {
     border-radius: 0px;
     transform: none;
@@ -375,8 +336,6 @@ p {
     height: 230px; } }
 
 @media screen and (max-width: 576px) {
-  #cabeza {
-    background-color: #5555f0; }
   .defin {
     max-width: 80%;
     grid-area: defin; }
@@ -388,8 +347,6 @@ p {
     margin: 1px; } }
 
 @media screen and (max-width: 432px) {
-  #cabeza {
-    background-color: white; }
   h1 {
     font-size: 1.5rem; }
   .menu-navegable {
