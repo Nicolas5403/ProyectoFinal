@@ -207,7 +207,7 @@ nav {
   grid-template-rows: 0fr 1fr;
   gap: 5px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "aclaracion" "texto-aclaracion"; }
+  grid-template-areas: "aclaracion" "texto-aclaracion"; }
 
 .aclaracion {
   border: groove;
@@ -266,7 +266,7 @@ nav {
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "T T" "t g" "p g" "pa g" "c g" "ha g" "al g" "V V"; }
+  grid-template-areas: "T T" "t g" "p g" "pa g" "c g" "ha g" "al g" "V V"; }
 
 .T {
   grid-area: T; }
@@ -321,10 +321,17 @@ p {
 /*-------------------------------------------*/
 #pie {
   background-color: #000013;
-  height: 50px;
+  height: 80px;
   border-style: groove;
   border-color: #ffff00;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  display: flex;
+  align-items: center; }
+
+.Pie-De-Pagina {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
 
 @media screen and (max-width: 992px) {
   #cabeza {
@@ -342,7 +349,7 @@ p {
     grid-template-columns: 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10fr;
     gap: 0px 0px;
-    grid-template-areas: "T" "t" "p" "pa" "c" "ha" "al" "V" "g"; } }
+    grid-template-areas: "T" "t" "p" "pa" "c" "ha" "al" "V" "g"; } }
 
 @media screen and (max-width: 768px) {
   #cabeza {
@@ -357,7 +364,7 @@ p {
     grid-template-rows: 1fr 1fr;
     gap: 3rem 0px;
     grid-auto-flow: row;
-    grid-template-areas: "veneno" "noveneno"; }
+    grid-template-areas: "veneno" "noveneno"; }
   .veneno {
     grid-area: veneno;
     margin: 0 auto; }
@@ -394,7 +401,7 @@ p {
     grid-template-rows: 1fr 1fr;
     gap: 5px 0px;
     grid-auto-flow: row;
-    grid-template-areas: "d1" "d2"; }
+    grid-template-areas: "d1" "d2"; }
   .d1 {
     grid-area: d1;
     margin: 0 auto; }

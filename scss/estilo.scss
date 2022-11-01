@@ -341,10 +341,17 @@ p{
 /*-------------------------------------------*/
 #pie{
     background-color:#000013;
-    height: 50px;
+    height: 80px;
     border-style: groove;
     border-color: #ffff00;
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.Pie-De-Pagina{
+    width: 100%;
+    display: flex;
+    justify-content: space-around
 }
 
 @media screen and (max-width: 992px){
